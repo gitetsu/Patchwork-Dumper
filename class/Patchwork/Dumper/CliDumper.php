@@ -49,7 +49,7 @@ class CliDumper extends Dumper
 
         if (! isset($this->colors) && ! isset($outputStream))
         {
-            isset(static::$defaultColors) or static::$defaultColors = $this->supportColors();
+            isset(static::$defaultColors) or static::$defaultColors = $this->supportsColors();
             $this->colors = static::$defaultColors;
         }
     }
